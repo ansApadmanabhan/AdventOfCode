@@ -1,6 +1,6 @@
 import pandas
 
-with open(r"/\\Puzzle2\\input.txt") as infile:
+with open(r"input.txt") as infile:
     data = infile.readlines()
 
 

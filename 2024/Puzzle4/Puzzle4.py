@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-with open(r"E:\AdventOfCode\pythonProject1\Puzzle4\input.txt", 'r') as infile:
+with open(r"input.txt", 'r') as infile:
     data = infile.readlines()
 
-with open(r"E:\AdventOfCode\pythonProject1\Puzzle4\smallInput.txt", 'r') as infile:
+with open(r"smallInput.txt", 'r') as infile:
     data2 = infile.readlines()
 
 
