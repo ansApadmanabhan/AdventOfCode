@@ -2,7 +2,7 @@ from collections import Counter
 
 def readInput(filename, delimiter, forceFormat: type):
 
-    with open(filename, 'r') as infile:
+    with open(filename) as infile:
         data = infile.readlines()
     numberOfColumns = len(data[0].split("   "))
     masterList = [[] for ii in range(numberOfColumns)]
@@ -13,7 +13,7 @@ def readInput(filename, delimiter, forceFormat: type):
     return masterList
 
 
-checkData = readInput(filename=r"/\\Puzzle1\\inputFile.txt",
+checkData = readInput(filename="input.txt",
                       delimiter="   ", forceFormat=int)
 
 firstList = checkData[0]
