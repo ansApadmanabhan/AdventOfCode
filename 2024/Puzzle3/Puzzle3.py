@@ -1,6 +1,6 @@
 import re
 
-with open(r"E:\AdventOfCode\pythonProject1\Puzzle3\input.txt", 'r') as infile:
+with open(r"input.txt", 'r') as infile:
     data = infile.read()
 
 summa = 0

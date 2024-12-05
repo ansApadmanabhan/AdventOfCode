@@ -1,6 +1,6 @@
 rules = []
 order = []
-with open(r"E:\AdventOfCode\pythonProject1\Puzzle5\input.txt", 'r') as infile:
+with open(r"input.txt", 'r') as infile:
     collectRule = True
     for ii in infile.readlines():
         if ii == "\n":
@@ -13,7 +13,7 @@ with open(r"E:\AdventOfCode\pythonProject1\Puzzle5\input.txt", 'r') as infile:
 
 rules2 = []
 order2 = []
-with open(r"E:\AdventOfCode\pythonProject1\Puzzle5\smallInput.txt", 'r') as infile:
+with open(r"smallInput.txt", 'r') as infile:
     collectRule = True
     for ii in infile.readlines():
         if ii == "\n":
