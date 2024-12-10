@@ -14,7 +14,7 @@ for indexi, ii in enumerate(data):
         locationLookUpMap[jj].append([indexi, indexj])
 
 
-def isThereAGoodContinuation(currentLocation, currentValue, path=None,subCounter=0):
+def isThereAGoodContinuation(currentLocation, currentValue, path=None):
     if path is None:
         path = []
     continuation = False
@@ -33,7 +33,6 @@ def isThereAGoodContinuation(currentLocation, currentValue, path=None,subCounter
         return False, path
     else:
         # Create branching dicts
-
         for kk in matchedLocation:
             continuation, path = isThereAGoodContinuation(kk, currentValue + 1, path)
             if continuation:
@@ -60,13 +59,12 @@ for trail in totalTrails:
             if key == 9 and value not in loc9:
                 loc9.append(value)
                 summa += 1
+print(f"Part 1: {summa}")
 
-
-
-
+# Count how many times 9 comes up in total
 summa2 = 0
 for jj in totalTrails:
     numNines = len([kk for kk in jj if list(kk.keys())[0] == 9])
     summa2 += numNines
-print(f"Part 1: {summa}")
+
 print(f"Part 2: {summa2}")
