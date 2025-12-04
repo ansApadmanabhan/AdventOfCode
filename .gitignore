@@ -91,7 +91,7 @@ env.bak/
 venv.bak/
 
 # sensitive
-*input.txt
+*.txt
 *AnswerAttempt.txt
 # Spyder project settings
 .spyderproject
